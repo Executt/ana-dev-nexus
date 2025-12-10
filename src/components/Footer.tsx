@@ -2,31 +2,19 @@ import { Link } from "react-router-dom";
 import { MapPin, Mail, Phone, ExternalLink } from "lucide-react";
 import logoAnaVertical from "@/assets/logo-ana-vertical.png";
 import logoSti from "@/assets/logo-sti.png";
-
 export function Footer() {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-4 mb-6">
-              <img
-                src={logoAnaVertical}
-                alt="ANA"
-                className="h-16 w-auto brightness-0 invert"
-              />
-              <img
-                src={logoSti}
-                alt="STI"
-                className="h-12 w-auto brightness-0 invert opacity-80"
-              />
+              <img src={logoAnaVertical} alt="ANA" className="h-16 w-auto brightness-0 invert" />
+              <img src={logoSti} alt="STI" className="h-12 w-auto brightness-0 invert opacity-80" />
             </div>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Portal de Desenvolvedores da Agência Nacional de Águas e Saneamento Básico. 
-              Tecnologia e inovação a serviço dos recursos hídricos do Brasil.
-            </p>
+            <p className="text-primary-foreground/80 text-sm leading-relaxed text-justify">Portal de Tecnologia e Desenvolvimento de Sistemas e Aplicações da Agência Nacional de Águas e Saneamento Básico. 
+Tecnologia e Inovação a Serviço dos recursos hídricos do Brasil.</p>
           </div>
 
           {/* Links */}
@@ -34,34 +22,22 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-lg">Documentação</h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/desenvolvimento/guias-rapidos"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <Link to="/desenvolvimento/guias-rapidos" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
                   Guias Rápidos
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/apis/catalogo"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <Link to="/apis/catalogo" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
                   Catálogo de APIs
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/devops/pipelines"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <Link to="/devops/pipelines" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
                   Pipelines CI/CD
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/governanca/politica"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <Link to="/governanca/politica" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
                   Governança de Dados
                 </Link>
               </li>
@@ -73,39 +49,23 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-lg">Recursos</h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/ferramentas/repositorios"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <Link to="/ferramentas/repositorios" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
                   Repositórios
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/ferramentas/dev"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <Link to="/ferramentas/dev" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
                   Ferramentas Dev
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://www.gov.br/ana/pt-br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm inline-flex items-center gap-1"
-                >
+                <a href="https://www.gov.br/ana/pt-br" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm inline-flex items-center gap-1">
                   Portal ANA
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.gov.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm inline-flex items-center gap-1"
-                >
+                <a href="https://www.gov.br" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm inline-flex items-center gap-1">
                   Gov.br
                   <ExternalLink className="w-3 h-3" />
                 </a>
@@ -146,22 +106,15 @@ export function Footer() {
               Todos os direitos reservados.
             </p>
             <div className="flex items-center gap-6">
-              <Link
-                to="/privacidade"
-                className="hover:text-primary-foreground transition-colors"
-              >
+              <Link to="/privacidade" className="hover:text-primary-foreground transition-colors">
                 Política de Privacidade
               </Link>
-              <Link
-                to="/acessibilidade"
-                className="hover:text-primary-foreground transition-colors"
-              >
+              <Link to="/acessibilidade" className="hover:text-primary-foreground transition-colors">
                 Acessibilidade
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
