@@ -136,7 +136,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img alt="ANA - Agência Nacional de Águas e Saneamento Básico" src="/lovable-uploads/32bd0f6d-cc3d-4203-8843-cac38f2c88d1.png" className="h-12 w-auto opacity-100 border-ana-blue border-none rounded" />
+            <img alt="ANA - Agência Nacional de Águas e Saneamento Básico" className="h-12 w-auto opacity-100 border-ana-blue border-none rounded" src="/lovable-uploads/9b8d0a2d-9587-4146-b962-63c565a86bd6.png" />
           </Link>
 
           {/* Navigation */}
