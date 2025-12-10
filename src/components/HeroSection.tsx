@@ -28,7 +28,7 @@ export function HeroSection() {
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-full text-primary-foreground text-sm font-medium mb-6">
               <Zap className="w-4 h-4" />
-              Portal Interno de Desenvolvedores
+              Portal Interno de Desenvolvimento de Tecnologias  
             </span>
           </div>
 
