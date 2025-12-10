@@ -41,8 +41,7 @@ da ANA<span className="block text-ana-blue-bright">da ANA</span>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{
           animationDelay: "0.2s"
         }}>
-            Tecnologia, inovação e governança a serviço dos recursos hídricos do Brasil. 
-            Acesse documentações, APIs, padrões e ferramentas de desenvolvimento.
+            Tecnologia, Inovação e Governança a Serviço dos Recursos Hídricos do Brasil. Acesse documentações, APIs, padrões e ferramentas de desenvolvimento.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{
