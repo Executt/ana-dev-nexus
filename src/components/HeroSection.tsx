@@ -32,15 +32,15 @@ export function HeroSection() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{
+          <h1 style={{
           animationDelay: "0.1s"
-        }}>Portal de Tecnologias
+        }} className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up text-center lg:text-7xl">Portal de Tecnologias
 da ANA<span className="block text-ana-blue-bright">da ANA</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{
+          <p style={{
           animationDelay: "0.2s"
-        }}>
+        }} className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-up text-center">
             Tecnologia, Inovação e Governança a Serviço dos Recursos Hídricos do Brasil. Acesse documentações, APIs, padrões e ferramentas de desenvolvimento.
           </p>
 
