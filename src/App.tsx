@@ -13,6 +13,8 @@ import ToolsPage from "./pages/ToolsPage";
 import AIPage from "./pages/AIPage";
 import SustentacaoPage from "./pages/SustentacaoPage";
 import CloudPage from "./pages/CloudPage";
+import COOPIPage from "./pages/COOPIPage";
+import EstrategiaCOOPIPage from "./pages/EstrategiaCOOPIPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +48,12 @@ const App = () => (
           
           {/* Multinuvem Routes */}
           <Route path="/multinuvem/:slug" element={<CloudPage />} />
+          
+          {/* COOPI Routes */}
+          <Route path="/coopi/:slug" element={<COOPIPage />} />
+          
+          {/* Estratégia COOPI Routes */}
+          <Route path="/estrategia-coopi/:slug" element={<EstrategiaCOOPIPage />} />
           
           {/* Resources Routes */}
           <Route path="/recursos/:slug" element={<ResourcesPage />} />
