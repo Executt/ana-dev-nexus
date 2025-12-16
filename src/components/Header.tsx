@@ -45,31 +45,46 @@ const menuData: MenuCategory[] = [{
     href: "/apis/exemplos"
   }]
 }, {
-  title: "DevOps",
+  title: "Inteligência Artificial",
   items: [{
-    label: "Pipelines (CI/CD)",
-    href: "/devops/pipelines"
+    label: "Governança de IA",
+    href: "/ia/governanca"
   }, {
-    label: "Kubernetes no OpenShift",
-    href: "/devops/kubernetes"
+    label: "Arquitetura de IA",
+    href: "/ia/arquitetura"
   }, {
-    label: "Deploy Automatizado",
-    href: "/devops/deploy"
+    label: "Casos de Uso de IA",
+    href: "/ia/casos-uso"
   }, {
-    label: "Observabilidade",
-    href: "/devops/observabilidade"
+    label: "IA Generativa",
+    href: "/ia/generativa"
   }, {
-    label: "Infraestrutura como Código",
-    href: "/devops/iac"
+    label: "Catálogo de Soluções de IA",
+    href: "/ia/catalogo"
+  }]
+}, {
+  title: "Sustentação de Sistemas",
+  items: [{
+    label: "Plataforma Padrão (OpenShift)",
+    href: "/sustentacao/plataforma"
+  }, {
+    label: "Modelo Operacional (SRE/DevSecOps)",
+    href: "/sustentacao/modelo-operacional"
+  }, {
+    label: "Ciclo de Vida das Aplicações",
+    href: "/sustentacao/ciclo-vida"
+  }, {
+    label: "Catálogo de Serviços",
+    href: "/sustentacao/catalogo-servicos"
   }]
 }, {
   title: "Governança de Dados",
   items: [{
+    label: "Catálogo de Dados Corporativo",
+    href: "/governanca/catalogo-dados"
+  }, {
     label: "Política de Dados da ANA",
     href: "/governanca/politica"
-  }, {
-    label: "Data Catalog",
-    href: "/governanca/data-catalog"
   }, {
     label: "Data Lineage",
     href: "/governanca/lineage"
@@ -79,6 +94,21 @@ const menuData: MenuCategory[] = [{
   }, {
     label: "Acesso e Segurança",
     href: "/governanca/seguranca"
+  }]
+}, {
+  title: "Multinuvem",
+  items: [{
+    label: "Oracle Cloud (OCI)",
+    href: "/multinuvem/oci"
+  }, {
+    label: "Amazon Web Services (AWS)",
+    href: "/multinuvem/aws"
+  }, {
+    label: "Google Cloud Platform (GCP)",
+    href: "/multinuvem/gcp"
+  }, {
+    label: "Microsoft Azure",
+    href: "/multinuvem/azure"
   }]
 }, {
   title: "Recursos Hídricos",

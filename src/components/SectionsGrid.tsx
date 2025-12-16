@@ -3,12 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Code2,
   Plug,
-  GitBranch,
   Database,
   Droplets,
   Wrench,
-  Shield,
-  BookOpen,
+  Brain,
+  Server,
+  Cloud,
   ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -18,7 +18,7 @@ const sections = [
     title: "Padrões e Boas Práticas",
     description:
       "Guias de estilo, arquitetura e padrões de código adotados pela ANA.",
-    icon: BookOpen,
+    icon: Code2,
     href: "/desenvolvimento/padroes-codigo",
     color: "bg-ana-blue-dark",
   },
@@ -31,36 +31,36 @@ const sections = [
     color: "bg-ana-blue",
   },
   {
-    title: "DevOps ANA",
+    title: "Inteligência Artificial",
     description:
-      "Pipelines, Kubernetes, deploy automatizado e observabilidade.",
-    icon: GitBranch,
-    href: "/devops/pipelines",
+      "Governança, arquitetura e catálogo de soluções de IA da ANA.",
+    icon: Brain,
+    href: "/ia/governanca",
+    color: "bg-gradient-to-br from-purple-600 to-blue-600",
+  },
+  {
+    title: "Sustentação de Sistemas",
+    description:
+      "OpenShift, DevSecOps, SRE e catálogo de serviços de plataforma.",
+    icon: Server,
+    href: "/sustentacao/plataforma",
     color: "bg-ana-blue-light",
   },
   {
-    title: "Governança e Dados",
+    title: "Governança de Dados",
     description:
-      "Políticas de dados, Data Catalog, lineage e conformidade LGPD.",
+      "Catálogo de dados (OpenMetadata), políticas e conformidade LGPD.",
     icon: Database,
-    href: "/governanca/politica",
+    href: "/governanca/catalogo-dados",
     color: "bg-secondary",
   },
   {
-    title: "Segurança",
+    title: "Multinuvem",
     description:
-      "Autenticação, autorização e práticas de segurança da informação.",
-    icon: Shield,
-    href: "/apis/autenticacao",
-    color: "bg-ana-blue-dark",
-  },
-  {
-    title: "Ferramentas Internas",
-    description:
-      "Repositórios, portais e ambiente de desenvolvimento e testes.",
-    icon: Wrench,
-    href: "/ferramentas/dev",
-    color: "bg-ana-blue",
+      "OCI, AWS, GCP e Azure: infraestrutura e serviços por provedor.",
+    icon: Cloud,
+    href: "/multinuvem/oci",
+    color: "bg-gradient-to-br from-orange-500 to-red-600",
   },
   {
     title: "Recursos Hídricos",
@@ -71,12 +71,12 @@ const sections = [
     color: "bg-accent",
   },
   {
-    title: "Arquitetura de Software",
+    title: "Ferramentas Internas",
     description:
-      "Padrões arquiteturais, microserviços e fluxos de integração.",
-    icon: Code2,
-    href: "/desenvolvimento/arquitetura",
-    color: "bg-ana-blue-light",
+      "Repositórios, portais e ambiente de desenvolvimento e testes.",
+    icon: Wrench,
+    href: "/ferramentas/dev",
+    color: "bg-ana-blue-dark",
   },
 ];
 

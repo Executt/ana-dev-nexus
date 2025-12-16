@@ -16,6 +16,41 @@ import {
 } from "lucide-react";
 
 const governanceContent = {
+  "catalogo-dados": {
+    title: "Catálogo de Dados Corporativo",
+    description: "Catálogo de Dados da ANA baseado na plataforma OpenMetadata.",
+    icon: Database,
+    externalLink: "https://catalogodedados.agencia.gov.br",
+    sections: [
+      {
+        title: "Plataforma OpenMetadata",
+        items: [
+          "O Catálogo de Dados da ANA é baseado na plataforma OpenMetadata",
+          "Acesso via: catalogodedados.agencia.gov.br",
+          "Ferramenta open-source para governança de dados",
+          "Interface unificada para descoberta e documentação",
+        ],
+      },
+      {
+        title: "Funcionalidades Principais",
+        items: [
+          "Descoberta de dados: busca e exploração de datasets",
+          "Governança e linhagem: rastreabilidade completa dos dados",
+          "Qualidade da informação: métricas e validações automatizadas",
+          "Metadados técnicos e de negócio: documentação centralizada",
+        ],
+      },
+      {
+        title: "Alinhamento Regulatório",
+        items: [
+          "LGPD: Lei Geral de Proteção de Dados Pessoais",
+          "LAI: Lei de Acesso à Informação",
+          "Governança de Dados Institucional da ANA",
+          "Política de Dados Abertos do Governo Federal",
+        ],
+      },
+    ],
+  },
   politica: {
     title: "Política de Dados da ANA",
     description: "Diretrizes e normas para gestão de dados institucionais.",
@@ -38,33 +73,6 @@ const governanceContent = {
           "Interno: uso exclusivo da ANA",
           "Restrito: acesso controlado por área",
           "Confidencial: proteção máxima",
-        ],
-      },
-    ],
-  },
-  "data-catalog": {
-    title: "Data Catalog",
-    description: "Catálogo centralizado de datasets e metadados da ANA.",
-    icon: Database,
-    sections: [
-      {
-        title: "Datasets Principais",
-        items: [
-          "Estações de Monitoramento (2.500+ registros)",
-          "Bacias Hidrográficas (12 regiões)",
-          "Outorgas de Uso da Água (150.000+ registros)",
-          "Qualidade da Água (séries históricas)",
-          "Indicadores de Saneamento (5.570 municípios)",
-        ],
-      },
-      {
-        title: "Metadados Obrigatórios",
-        items: [
-          "Nome e descrição do dataset",
-          "Data owner e data steward",
-          "Frequência de atualização",
-          "Classificação de sensibilidade",
-          "Linhagem (data lineage)",
         ],
       },
     ],
@@ -229,12 +237,35 @@ const GovernancePage = () => {
 
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
+              {/* External Link for Catálogo de Dados */}
+              {slug === "catalogo-dados" && (
+                <Card className="border-accent/50 bg-accent/10">
+                  <CardContent className="flex items-center justify-between p-4">
+                    <div className="flex items-center gap-4">
+                      <Database className="w-8 h-8 text-accent" />
+                      <div>
+                        <h4 className="font-semibold text-foreground">Acesse o Catálogo de Dados</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Plataforma OpenMetadata da ANA
+                        </p>
+                      </div>
+                    </div>
+                    <Button asChild>
+                      <a href="https://catalogodedados.agencia.gov.br" target="_blank" rel="noopener noreferrer">
+                        Acessar Catálogo
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              )}
+
               {/* Alert for LGPD page */}
               {slug === "lgpd" && (
-                <Card className="border-amber-500/50 bg-amber-50">
+                <Card className="border-amber-500/50 bg-amber-50 dark:bg-amber-950/30">
                   <CardContent className="flex items-start gap-4 p-4">
                     <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-amber-800 text-sm">
+                    <p className="text-amber-800 dark:text-amber-200 text-sm">
                       Todo tratamento de dados pessoais deve ser registrado no ROPA (Registro de Operações de Tratamento).
                     </p>
                   </CardContent>
