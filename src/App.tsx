@@ -10,6 +10,9 @@ import DevOpsPage from "./pages/DevOpsPage";
 import GovernancePage from "./pages/GovernancePage";
 import ResourcesPage from "./pages/ResourcesPage";
 import ToolsPage from "./pages/ToolsPage";
+import AIPage from "./pages/AIPage";
+import SustentacaoPage from "./pages/SustentacaoPage";
+import CloudPage from "./pages/CloudPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,11 +32,20 @@ const App = () => (
           {/* APIs Routes */}
           <Route path="/apis/:slug" element={<APIPage />} />
           
-          {/* DevOps Routes */}
+          {/* DevOps Routes (legacy) */}
           <Route path="/devops/:slug" element={<DevOpsPage />} />
+          
+          {/* Inteligência Artificial Routes */}
+          <Route path="/ia/:slug" element={<AIPage />} />
+          
+          {/* Sustentação de Sistemas Routes */}
+          <Route path="/sustentacao/:slug" element={<SustentacaoPage />} />
           
           {/* Governance Routes */}
           <Route path="/governanca/:slug" element={<GovernancePage />} />
+          
+          {/* Multinuvem Routes */}
+          <Route path="/multinuvem/:slug" element={<CloudPage />} />
           
           {/* Resources Routes */}
           <Route path="/recursos/:slug" element={<ResourcesPage />} />
