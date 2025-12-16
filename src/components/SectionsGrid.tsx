@@ -10,6 +10,8 @@ import {
   Server,
   Cloud,
   ArrowRight,
+  Building2,
+  Lightbulb,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -57,10 +59,26 @@ const sections = [
   {
     title: "Multinuvem",
     description:
-      "OCI, AWS, GCP e Azure: infraestrutura e serviços por provedor.",
+      "OCI, AWS, GCP, Azure e estratégia de otimização de nuvem.",
     icon: Cloud,
     href: "/multinuvem/oci",
     color: "bg-gradient-to-br from-orange-500 to-red-600",
+  },
+  {
+    title: "COOPI",
+    description:
+      "Coordenação de Infraestrutura e Operações de TI da ANA.",
+    icon: Building2,
+    href: "/coopi/quem-somos",
+    color: "bg-gradient-to-br from-slate-700 to-slate-900",
+  },
+  {
+    title: "Estratégia COOPI",
+    description:
+      "Sumário executivo: contexto, objetivos e iniciativas estratégicas.",
+    icon: Lightbulb,
+    href: "/estrategia-coopi/contexto",
+    color: "bg-gradient-to-br from-teal-600 to-teal-800",
   },
   {
     title: "Recursos Hídricos",

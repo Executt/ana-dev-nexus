@@ -109,6 +109,39 @@ const menuData: MenuCategory[] = [{
   }, {
     label: "Microsoft Azure",
     href: "/multinuvem/azure"
+  }, {
+    label: "Otimização de Nuvem (COOPI)",
+    href: "/multinuvem/otimizacao"
+  }]
+}, {
+  title: "COOPI",
+  items: [{
+    label: "Quem Somos",
+    href: "/coopi/quem-somos"
+  }, {
+    label: "Missão, Visão e Valores",
+    href: "/coopi/missao-visao-valores"
+  }, {
+    label: "Áreas de Atuação",
+    href: "/coopi/areas-atuacao"
+  }, {
+    label: "Responsabilidades",
+    href: "/coopi/responsabilidades"
+  }]
+}, {
+  title: "Estratégia COOPI",
+  items: [{
+    label: "Contexto Estratégico",
+    href: "/estrategia-coopi/contexto"
+  }, {
+    label: "Objetivos Estratégicos",
+    href: "/estrategia-coopi/objetivos"
+  }, {
+    label: "Principais Iniciativas",
+    href: "/estrategia-coopi/iniciativas"
+  }, {
+    label: "Resultados Esperados",
+    href: "/estrategia-coopi/resultados"
   }]
 }, {
   title: "Recursos Hídricos",

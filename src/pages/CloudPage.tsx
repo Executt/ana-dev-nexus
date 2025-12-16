@@ -190,6 +190,71 @@ const cloudContent: Record<string, {
         ]
       }
     ]
+  },
+  "otimizacao": {
+    title: "Otimização de Nuvem (COOPI)",
+    description: "Estratégia institucional de otimização, racionalização e evolução do uso de serviços de nuvem na ANA.",
+    icon: Server,
+    color: "from-ana-blue to-ana-dark-blue",
+    sections: [
+      {
+        title: "Visão Geral",
+        content: "A nuvem é um dos pilares fundamentais da Transformação Digital da ANA. A COOPI lidera a governança, eficiência e sustentabilidade dos custos de nuvem, garantindo que os investimentos em tecnologia estejam alinhados aos objetivos estratégicos da Agência.",
+        items: [
+          "Nuvem como habilitador da modernização institucional",
+          "Governança centralizada sob coordenação da COOPI",
+          "Foco em eficiência operacional e financeira",
+          "Alinhamento com a estratégia de TI da ANA"
+        ],
+        highlight: true
+      },
+      {
+        title: "Princípios de Otimização",
+        content: "Os princípios que norteiam a estratégia de otimização de nuvem:",
+        items: [
+          "Eficiência operacional: fazer mais com menos recursos",
+          "Escalabilidade: crescer de forma sustentável conforme a demanda",
+          "Segurança: proteção de dados e conformidade regulatória",
+          "Governança: controle e visibilidade sobre todos os recursos",
+          "Redução de custos: eliminar desperdícios e otimizar gastos",
+          "Evitar vendor lock-in: manter flexibilidade entre provedores"
+        ]
+      },
+      {
+        title: "Linhas de Ação",
+        content: "Principais iniciativas para otimização do ambiente de nuvem:",
+        items: [
+          "Consolidação e unificação de bancos de dados",
+          "Containerização de workloads legados",
+          "Migração gradual e planejada para plataformas modernas",
+          "Uso preferencial de serviços gerenciados",
+          "Redução de EC2 isoladas e recursos ociosos",
+          "Adoção de OpenShift como plataforma padrão"
+        ]
+      },
+      {
+        title: "FinOps",
+        content: "Práticas de gestão financeira de nuvem adotadas pela ANA:",
+        items: [
+          "Transparência de custos: visibilidade total dos gastos por área",
+          "Pagamento por uso: modelo flexível de alocação de recursos",
+          "Previsibilidade orçamentária: planejamento financeiro assertivo",
+          "Otimização contínua: revisão periódica de recursos",
+          "Apoio à tomada de decisão: dados para gestores e líderes"
+        ]
+      },
+      {
+        title: "Benefícios Esperados",
+        content: "Resultados projetados com a implementação da estratégia:",
+        items: [
+          "Redução significativa de custos operacionais",
+          "Simplificação do ambiente tecnológico",
+          "Melhoria de desempenho das aplicações",
+          "Aumento da confiabilidade dos serviços",
+          "Sustentação tecnológica de longo prazo"
+        ]
+      }
+    ]
   }
 };
 
@@ -198,6 +263,7 @@ const sidebarLinks = [
   { label: "Amazon Web Services (AWS)", href: "/multinuvem/aws", icon: Cloud },
   { label: "Google Cloud Platform (GCP)", href: "/multinuvem/gcp", icon: Globe },
   { label: "Microsoft Azure", href: "/multinuvem/azure", icon: HardDrive },
+  { label: "Otimização de Nuvem (COOPI)", href: "/multinuvem/otimizacao", icon: Server },
 ];
 
 export default function CloudPage() {
