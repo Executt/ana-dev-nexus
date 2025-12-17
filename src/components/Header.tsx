@@ -116,8 +116,8 @@ const menuData: MenuCategory[] = [{
 }, {
   title: "COOPI",
   items: [{
-    label: "Quem Somos",
-    href: "/coopi/quem-somos"
+    label: "Sobre a COOPI",
+    href: "/coopi/sobre"
   }, {
     label: "Missão, Visão e Valores",
     href: "/coopi/missao-visao-valores"
@@ -125,23 +125,14 @@ const menuData: MenuCategory[] = [{
     label: "Áreas de Atuação",
     href: "/coopi/areas-atuacao"
   }, {
-    label: "Responsabilidades",
-    href: "/coopi/responsabilidades"
-  }]
-}, {
-  title: "Estratégia COOPI",
-  items: [{
-    label: "Contexto Estratégico",
-    href: "/estrategia-coopi/contexto"
+    label: "Estratégia da COOPI",
+    href: "/coopi/estrategia"
   }, {
-    label: "Objetivos Estratégicos",
-    href: "/estrategia-coopi/objetivos"
+    label: "Sumário Executivo",
+    href: "/coopi/sumario-executivo"
   }, {
-    label: "Principais Iniciativas",
-    href: "/estrategia-coopi/iniciativas"
-  }, {
-    label: "Resultados Esperados",
-    href: "/estrategia-coopi/resultados"
+    label: "Iniciativas Estratégicas",
+    href: "/coopi/iniciativas"
   }]
 }, {
   title: "Recursos Hídricos",
