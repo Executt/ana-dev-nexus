@@ -11,7 +11,6 @@ import {
   Cloud,
   ArrowRight,
   Building2,
-  Lightbulb,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -67,18 +66,10 @@ const sections = [
   {
     title: "COOPI",
     description:
-      "Coordenação de Infraestrutura e Operações de TI da ANA.",
+      "Coordenação de Infraestrutura e Operações: estratégia, iniciativas e governança.",
     icon: Building2,
-    href: "/coopi/quem-somos",
-    color: "bg-gradient-to-br from-slate-700 to-slate-900",
-  },
-  {
-    title: "Estratégia COOPI",
-    description:
-      "Sumário executivo: contexto, objetivos e iniciativas estratégicas.",
-    icon: Lightbulb,
-    href: "/estrategia-coopi/contexto",
-    color: "bg-gradient-to-br from-teal-600 to-teal-800",
+    href: "/coopi/sobre",
+    color: "bg-gradient-to-br from-ana-blue to-ana-dark-blue",
   },
   {
     title: "Recursos Hídricos",
