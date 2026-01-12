@@ -13,8 +13,7 @@ export function Footer() {
               <img src={logoAnaVertical} alt="ANA" className="h-16 w-auto brightness-0 invert" />
               <img alt="STI" src="/lovable-uploads/a7230ffc-ec14-483d-aa26-d6efcec559c9.png" className="h-12 w-auto brightness-0 invert opacity-75 border-none rounded-lg shadow-md" />
             </div>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed text-justify">Portal de Tecnologia e Desenvolvimento de Sistemas e Aplicações da Agência Nacional de Águas e Saneamento Básico. 
-Tecnologia e Inovação a Serviço dos recursos hídricos do Brasil.</p>
+            <p className="text-primary-foreground/80 text-sm leading-relaxed text-justify">Portal da Coordenação de Infraestrutura e Operações de Tecnologia da Agência Nacional de Águas e Saneamento Básico.  Tecnologia e Inovação a Serviço da ANA.</p>
           </div>
 
           {/* Links */}
@@ -90,7 +89,7 @@ Tecnologia e Inovação a Serviço dos recursos hídricos do Brasil.</p>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/80">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>sti@ana.gov.br</span>
+                <span>coopi@ana.gov.br</span>
               </li>
             </ul>
           </div>
