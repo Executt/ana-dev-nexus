@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 const pillars = [
   {
-    title: "Multinuvem",
+    title: "Nuvem",
     description: "OCI, AWS, GCP e Azure com governança unificada e estratégia FinOps.",
     icon: Cloud,
     href: "/multinuvem/oci",
@@ -30,7 +30,7 @@ const pillars = [
     stats: "Monitoramento 24x7",
   },
   {
-    title: "Gestão de Infra e Ops",
+    title: "Gestão de Infra e Operações",
     description: "SACM, Zabbix, Grafana e monitoramento centralizado.",
     icon: Activity,
     href: "/gestao-infra/ativos",
