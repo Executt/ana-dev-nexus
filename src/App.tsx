@@ -14,7 +14,8 @@ import AIPage from "./pages/AIPage";
 import SustentacaoPage from "./pages/SustentacaoPage";
 import CloudPage from "./pages/CloudPage";
 import COOPIPage from "./pages/COOPIPage";
-
+import GestaoInfraPage from "./pages/GestaoInfraPage";
+import SegurancaPage from "./pages/SegurancaPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,12 @@ const App = () => (
           
           {/* COOPI Routes */}
           <Route path="/coopi/:slug" element={<COOPIPage />} />
+          
+          {/* Gestão de Infra e Ops Routes */}
+          <Route path="/gestao-infra/:slug" element={<GestaoInfraPage />} />
+          
+          {/* Segurança Cibernética Routes */}
+          <Route path="/seguranca/:slug" element={<SegurancaPage />} />
           
           {/* Legacy redirect: Estratégia COOPI -> COOPI */}
           <Route path="/estrategia-coopi/:slug" element={<COOPIPage />} />

@@ -1,8 +1,8 @@
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { InfraDashboard } from "@/components/InfraDashboard";
 import { SectionsGrid } from "@/components/SectionsGrid";
 import { StatsSection } from "@/components/StatsSection";
-import { HighlightsSection } from "@/components/HighlightsSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 
@@ -12,9 +12,9 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <InfraDashboard />
         <SectionsGrid />
         <StatsSection />
-        <HighlightsSection />
         <CTASection />
       </main>
       <Footer />
