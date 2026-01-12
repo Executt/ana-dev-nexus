@@ -5,18 +5,60 @@ import {
   Plug,
   Database,
   Droplets,
-  Wrench,
   Brain,
   Server,
   Cloud,
   ArrowRight,
   Building2,
+  Shield,
+  Activity,
+  HardDrive,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const sections = [
   {
-    title: "Padrões e Boas Práticas",
+    title: "Multinuvem",
+    description:
+      "OCI, AWS, GCP, Azure com estratégia FinOps e governança unificada.",
+    icon: Cloud,
+    href: "/multinuvem/oci",
+    color: "bg-gradient-to-br from-orange-500 to-red-600",
+  },
+  {
+    title: "Segurança Cibernética",
+    description:
+      "Trend Vision One (XDR), Wazuh (SIEM) e DevSecOps integrado.",
+    icon: Shield,
+    href: "/seguranca/visao-geral",
+    color: "bg-gradient-to-br from-red-600 to-rose-700",
+  },
+  {
+    title: "Gestão de Infra e Ops",
+    description:
+      "SACM, Zabbix, Grafana, GLPI e Veritas NetBackup.",
+    icon: Activity,
+    href: "/gestao-infra/ativos",
+    color: "bg-gradient-to-br from-blue-600 to-indigo-700",
+  },
+  {
+    title: "Plataforma OpenShift",
+    description:
+      "OKD, DevSecOps, ACS, Quay, Trivy e automação Ansible.",
+    icon: Server,
+    href: "/sustentacao/plataforma",
+    color: "bg-ana-blue-light",
+  },
+  {
+    title: "COOPI",
+    description:
+      "Coordenação de Infraestrutura e Operações: estratégia e governança.",
+    icon: Building2,
+    href: "/coopi/sobre",
+    color: "bg-gradient-to-br from-ana-blue to-ana-dark-blue",
+  },
+  {
+    title: "Desenvolvimento",
     description:
       "Guias de estilo, arquitetura e padrões de código adotados pela ANA.",
     icon: Code2,
@@ -32,22 +74,6 @@ const sections = [
     color: "bg-ana-blue",
   },
   {
-    title: "Inteligência Artificial",
-    description:
-      "Governança, arquitetura e catálogo de soluções de IA da ANA.",
-    icon: Brain,
-    href: "/ia/governanca",
-    color: "bg-gradient-to-br from-purple-600 to-blue-600",
-  },
-  {
-    title: "Sustentação de Sistemas",
-    description:
-      "OpenShift, DevSecOps, SRE e catálogo de serviços de plataforma.",
-    icon: Server,
-    href: "/sustentacao/plataforma",
-    color: "bg-ana-blue-light",
-  },
-  {
     title: "Governança de Dados",
     description:
       "Catálogo de dados (OpenMetadata), políticas e conformidade LGPD.",
@@ -56,20 +82,12 @@ const sections = [
     color: "bg-secondary",
   },
   {
-    title: "Multinuvem",
+    title: "Inteligência Artificial",
     description:
-      "OCI, AWS, GCP, Azure e estratégia de otimização de nuvem.",
-    icon: Cloud,
-    href: "/multinuvem/oci",
-    color: "bg-gradient-to-br from-orange-500 to-red-600",
-  },
-  {
-    title: "COOPI",
-    description:
-      "Coordenação de Infraestrutura e Operações: estratégia, iniciativas e governança.",
-    icon: Building2,
-    href: "/coopi/sobre",
-    color: "bg-gradient-to-br from-ana-blue to-ana-dark-blue",
+      "Governança, arquitetura e catálogo de soluções de IA da ANA.",
+    icon: Brain,
+    href: "/ia/governanca",
+    color: "bg-gradient-to-br from-purple-600 to-blue-600",
   },
   {
     title: "Recursos Hídricos",
@@ -78,14 +96,6 @@ const sections = [
     icon: Droplets,
     href: "/recursos/mapas",
     color: "bg-accent",
-  },
-  {
-    title: "Ferramentas Internas",
-    description:
-      "Repositórios, portais e ambiente de desenvolvimento e testes.",
-    icon: Wrench,
-    href: "/ferramentas/dev",
-    color: "bg-ana-blue-dark",
   },
 ];
 
@@ -98,12 +108,11 @@ export function SectionsGrid() {
             Explore nossos recursos
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Documentação completa, APIs, ferramentas e guias para desenvolvedores
-            da ANA.
+            Infraestrutura, operações, segurança e desenvolvimento para a transformação digital da ANA.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {sections.map((section, index) => (
             <Link
               key={section.title}

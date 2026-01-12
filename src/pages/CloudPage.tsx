@@ -11,7 +11,10 @@ import {
   HardDrive,
   CheckCircle,
   ArrowRight,
-  ExternalLink
+  Network,
+  Shield,
+  Zap,
+  DollarSign
 } from "lucide-react";
 
 const cloudContent: Record<string, {
@@ -37,7 +40,7 @@ const cloudContent: Record<string, {
         content: "Principais serviços OCI em uso na ANA:",
         items: [
           "EXACS (Exadata Cloud Service) para bancos de dados críticos",
-          "OKE (Oracle Kubernetes Engine) para containers",
+          "OKD (Kubernetes baseado em OpenShift) para containers - padronização corporativa",
           "Object Storage para armazenamento de objetos",
           "Networking para conectividade segura"
         ],
@@ -45,11 +48,22 @@ const cloudContent: Record<string, {
       },
       {
         title: "Clusters Kubernetes (OKD)",
-        content: "Ambientes Kubernetes disponíveis na OCI:",
+        content: "Ambientes OKD (OpenShift Kubernetes Distribution) - plataforma padrão corporativa:",
         items: [
           "Cluster dev-hmg: Desenvolvimento e homologação",
           "Cluster prd: Ambiente de produção",
-          "Integração com OpenShift on-premise"
+          "Padronização com OpenShift on-premise",
+          "Gestão unificada de containers"
+        ]
+      },
+      {
+        title: "Conectividade Híbrida",
+        content: "Conexões seguras entre ambiente on-premise e OCI:",
+        items: [
+          "FastConnect para conexão dedicada de alta velocidade",
+          "VPN Site-to-Site para redundância e contingência",
+          "Integração com rede corporativa da ANA",
+          "Baixa latência para workloads críticos"
         ]
       },
       {
@@ -185,7 +199,6 @@ const cloudContent: Record<string, {
         items: [
           "Azure Synapse para analytics",
           "Power BI para visualização",
-          "Azure DevOps para CI/CD",
           "Active Directory para autenticação"
         ]
       }
@@ -229,7 +242,7 @@ const cloudContent: Record<string, {
           "Migração gradual e planejada para plataformas modernas",
           "Uso preferencial de serviços gerenciados",
           "Redução de EC2 isoladas e recursos ociosos",
-          "Adoção de OpenShift como plataforma padrão"
+          "Adoção de OKD/OpenShift como plataforma padrão"
         ]
       },
       {
@@ -369,12 +382,32 @@ export default function CloudPage() {
                       <span className="font-medium text-foreground">4</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Clusters K8s:</span>
-                      <span className="font-medium text-foreground">6</span>
+                      <span>Clusters K8s (OKD/ROSA):</span>
+                      <span className="font-medium text-foreground">4</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Estratégia:</span>
                       <span className="font-medium text-foreground">Multinuvem</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Connectivity */}
+              <Card className="mt-4 border-accent/30 bg-accent/5">
+                <CardContent className="p-4">
+                  <h4 className="font-medium text-sm mb-3 flex items-center gap-2">
+                    <Network className="w-4 h-4 text-accent" />
+                    Conectividade
+                  </h4>
+                  <div className="space-y-2 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-2">
+                      <Zap className="w-3 h-3 text-accent" />
+                      <span>FastConnect (OCI)</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Shield className="w-3 h-3 text-accent" />
+                      <span>VPN Site-to-Site</span>
                     </div>
                   </div>
                 </CardContent>
@@ -420,7 +453,7 @@ export default function CloudPage() {
                         <span className="font-medium">OCI</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        Sistemas críticos, EXADATA, bancos Oracle
+                        Sistemas críticos, EXADATA, bancos Oracle, OKD
                       </p>
                     </div>
                     <div className="p-4 rounded-lg bg-muted/50">
