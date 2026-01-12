@@ -11,7 +11,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-4 mb-6">
               <img src={logoAnaVertical} alt="ANA" className="h-16 w-auto brightness-0 invert" />
-              <img src={logoSti} alt="STI" className="h-12 w-auto brightness-0 invert opacity-80" />
+              <img alt="STI" src="/lovable-uploads/a7230ffc-ec14-483d-aa26-d6efcec559c9.png" className="h-12 w-auto brightness-0 invert opacity-75 border-none rounded-lg shadow-md" />
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed text-justify">Portal de Tecnologia e Desenvolvimento de Sistemas e Aplicações da Agência Nacional de Águas e Saneamento Básico. 
 Tecnologia e Inovação a Serviço dos recursos hídricos do Brasil.</p>
