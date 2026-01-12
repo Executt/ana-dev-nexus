@@ -11,7 +11,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-4 mb-6">
               <img src={logoAnaVertical} alt="ANA" className="h-16 w-auto brightness-0 invert" />
-              <img alt="STI" src="/lovable-uploads/a7230ffc-ec14-483d-aa26-d6efcec559c9.png" className="h-12 w-auto brightness-0 invert opacity-75 border-none rounded-none shadow-none" />
+              
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed text-justify">Portal da Coordenação de Infraestrutura e Operações de Tecnologia da Agência Nacional de Águas e Saneamento Básico.  Tecnologia e Inovação a Serviço da ANA.</p>
           </div>
