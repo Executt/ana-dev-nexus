@@ -28,14 +28,13 @@ export function HeroSection() {
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-full text-primary-foreground text-sm font-medium mb-6">
               <Zap className="w-4 h-4" />
-              Portal Interno de Desenvolvimento de Tecnologias  
+              Portal Interno de Governança da Infraestrutura e Operações de TIC  
             </span>
           </div>
 
           <h1 style={{
           animationDelay: "0.1s"
-        }} className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up text-center lg:text-7xl">Portal de Tecnologias
-da ANA<span className="block text-ana-blue-bright">da ANA</span>
+        }} className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up text-center lg:text-7xl">Portal de Tecnologias da Infraestrutura <span className="block text-ana-blue-bright">de TIC da ANA</span>
           </h1>
 
           <p style={{
